@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.tailwindcss.com"></script>
+
+
+<title>Index Page</title>
+</head>
+
+
+
+<body class="bg-gray-100 text-gray-800">
+
+<!-- Navigation -->
+<nav class="bg-white shadow-md">
+<div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+
+<h1 class="text-xl font-bold text-gray-600">My Website</h1>
+
+<div class="space-x-6">
+<a href="index.html" class="text-gray-700 hover:text-blue-600">Home</a>
+<a href="./src/pages/about/about.html" class="text-gray-700 hover:text-blue-600">About</a>
+<a href="./src/pages/contact/contact.html" class="text-gray-700 hover:text-blue-600">Contact</a>
+<a href="signin.html" class="text-gray-700 hover:text-blue-600">Sign In</a>
+<a href="signup.html" class="text-gray-700 hover:text-blue-600">Sign Up</a>
+
+</div>
+
+</div>
+</nav>
+
+<!-- Hero Section -->
+<section class="text-center py-16 bg-gradient-to-r from-green-500 to-indigo-600 text-white">
+
+<h2 class="text-4xl font-bold mb-4">Welcome to Our Story</h2>
+
+<!-- <p class="max-w-2xl mx-auto text-lg">
+In a quiet village surrounded by golden fields, a young boy named Arif discovered a hidden path behind the old banyan tree...
+</p> -->
+
+<a href="./src/pages/about/about.html"
+class="mt-6 inline-block bg-white text-gray-700 px-6 py-2 rounded-lg shadow hover:bg-gray-200">
+Learn More
+</a>
+
+</section>
+
+<!-- Dynamic Data Section -->
+<section class="max-w-4xl mx-auto py-12 px-6">
+<h3 class="text-2xl font-semibold mb-6 text-center">Project Info</h3>
+<div id="infoSection" class="bg-white p-6 rounded-lg shadow space-y-4">
+<p id="Project"></p>
+<p id="Language Type"></p>
+<p id="Student"></p>
+<p id="Status"></p>
+<div id="summary" class="mt-4 p-4 bg-gray-100 rounded"></div>
+</div>
+
+<div class="flex space-x-4 mt-6 justify-center">
+    <button onclick="summary()" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-green-700">
+    Show Summary
+    </button>
+
+</div>
+</section>
+
+
+<!-- Team Section -->
+<section class="max-w-6xl mx-auto py-12 px-4">
+
+<h3 class="text-2xl font-semibold mb-6 text-center">Our Team</h3>
+
+<ul class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+
+<li class="bg-white p-6 rounded-lg shadow">Huraira</li>
+<li class="bg-white p-6 rounded-lg shadow">Rehan </li>
+<li class="bg-white p-6 rounded-lg shadow"> Ahmad </li>
+
+</ul>
+
+</section>
+
+<!-- Contact Form -->
+<section class="bg-gray-200 py-12">
+
+<div class="max-w-4xl mx-auto px-6">
+
+<h3 class="text-2xl font-semibold mb-6 text-center">Get in Touch</h3>
+
+<form class="bg-white p-8 rounded-lg shadow space-y-4">
+
+<input type="text" placeholder="Enter your name" class="w-full border rounded px-4 py-2">
+
+<input type="email" placeholder="Enter your Email" class="w-full border rounded px-4 py-2">
+
+<input type="password" placeholder="Enter your Password" class="w-full border rounded px-4 py-2">
+
+<input type="number" placeholder="Enter your age" class="w-full border rounded px-4 py-2">
+
+<button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">
+Send
+</button>
+
+</form>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-white shadow-inner py-6 text-center text-gray-600">
+© 2026 My Website. All rights reserved.
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
